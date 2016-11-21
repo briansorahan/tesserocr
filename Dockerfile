@@ -4,7 +4,7 @@ USER		root
 WORKDIR		/root
 
 RUN		apt-get update
-RUN		apt-get install -qq -y gcc g++ make autoconf automake libtool libpng12-dev libjpeg-dev libtiff5-dev zlib1g-dev pkg-config
+RUN		apt-get install -qq -y gcc g++ make autoconf automake libtool libpng12-dev libjpeg-dev libtiff5-dev zlib1g-dev pkg-config ghostscript imagemagick
 
 RUN		wget https://github.com/DanBloomberg/leptonica/archive/v1.71.tar.gz && tar xzf v1.71.tar.gz && cd leptonica-1.71 && chmod +x configure && ./configure && make && make install
 

@@ -10,6 +10,6 @@ image: .image
 	@touch $@
 
 push: .image
-	@docker push bsorahan/tesserocr
+	@docker push $(IMG)
 
 .PHONY: clean image push
